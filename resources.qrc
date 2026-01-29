@@ -1,0 +1,20 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+    <qresource prefix="/">
+        <file>complete_interface.qml</file>
+        <file>ui/components/AsciiView.qml</file>
+        <file>ui/components/BandwidthChart.qml</file>
+        <file>ui/components/GlassCard.qml</file>
+        <file>ui/components/HealthIndicator.qml</file>
+        <file>ui/components/HexDumpView.qml</file>
+        <file>ui/components/MenuBarButton.qml</file>
+        <file>ui/components/ModernButton.qml</file>
+        <file>ui/components/NetworkTopologyMap.qml</file>
+        <file>ui/components/PacketDelegate.qml</file>
+        <file>ui/components/PacketTableView.qml</file>
+        <file>ui/components/ProtocolTreeView.qml</file>
+        <file>ui/components/StatItem.qml</file>
+        <file>ui/components/StatsCard.qml</file>
+        <file>ui/dialogs/CaptureDialog.qml</file>
+    </qresource>
+</RCC>

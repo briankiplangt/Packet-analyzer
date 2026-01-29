@@ -1,0 +1,308 @@
+# C++ objects and libs
+*.slo
+*.lo
+*.o
+*.a
+*.la
+*.lai
+*.so
+*.so.*
+*.dll
+*.dylib
+
+# Qt-es
+object_script.*.Release
+object_script.*.Debug
+*_plugin_import.cpp
+/.qmake.cache
+/.qmake.stash
+*.pro.user
+*.pro.user.*
+*.qbs.user
+*.qbs.user.*
+*.moc
+moc_*.cpp
+moc_*.h
+qrc_*.cpp
+ui_*.h
+*.qmlc
+*.jsc
+Makefile*
+*build-*
+*.qm
+*.prl
+
+# Qt unit tests
+target_wrapper.*
+
+# QtCreator
+*.autosave
+
+# QtCreator Qml
+*.qmlproject.user
+*.qmlproject.user.*
+
+# QtCreator CMake
+CMakeLists.txt.user*
+
+# QtCreator 4.8< compilation database 
+compile_commands.json
+
+# QtCreator local machine specific files for imported projects
+*creator.user*
+
+# Visual Studio
+.vs/
+*.vcxproj.user
+*.vcxproj.filters
+*.sln.docstates
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+bld/
+[Bb]in/
+[Oo]bj/
+[Ll]og/
+[Ll]ogs/
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+CMakeScripts/
+Testing/
+Makefile
+cmake_install.cmake
+install_manifest.txt
+compile_commands.json
+CTestTestfile.cmake
+_deps
+
+# CMake build directory
+build/
+out/
+
+# Executables
+*.exe
+*.out
+*.app
+
+# Compressed files
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# IDE files
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.orig
+
+# Generated MOC files
+moc_*.cpp
+moc_*.h
+
+# Generated QRC files
+qrc_*.cpp
+
+# Generated UI files
+ui_*.h
+
+# Qt translation files
+*.ts
+*.qm
+
+# Qt resource files (compiled)
+*.rcc
+
+# Qt Quick compiler generated files
+*.qmlc
+*.jsc
+
+# Qt Quick Designer working files
+*.qmlproject.qtds
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Package files
+*.deb
+*.rpm
+*.pkg
+*.dmg
+*.msi
+
+# Conan
+conanfile.txt
+conandata.yml
+conanbuildinfo.*
+conan.lock
+
+# vcpkg
+vcpkg_installed/
+
+# Clang
+.clangd/
+.cache/
+
+# GDB
+.gdb_history
+
+# Valgrind
+*.memcheck
+*.helgrind
+*.drd
+*.massif
+
+# Profiling
+*.prof
+*.gprof
+
+# Coverage
+*.gcov
+*.gcda
+*.gcno
+coverage.info
+coverage/
+
+# Documentation
+docs/html/
+docs/latex/
+*.doxygen
+
+# Backup files
+*~
+*.bak
+*.backup
+*.swp
+*.swo
+
+# Windows specific
+*.pdb
+*.idb
+*.ilk
+*.exp
+*.lib (if not a system library)
+
+# macOS specific
+*.dSYM/
+
+# Linux specific
+core
+core.*
+
+# Temporary Qt files
+*.autosave
+*.tmp
+*.temp
+
+# Qt Quick 3D
+*.mesh
+*.qsb
+
+# Qt WebEngine
+qtwebengine_*
+
+# Custom build artifacts
+PacketAnalyzer2026_Production.exe
+*.pdb
+*.iobj
+*.ipdb
+
+# Database files
+packets.db
+network_data.sqlite
+
+# Configuration files (if they contain sensitive data)
+config.ini
+settings.conf
+
+# Test files
+test_*
+*_test.cpp
+*_test.h
+
+# Benchmark files
+benchmark_*
+*_benchmark.cpp
+
+# Generated documentation
+doc/
+documentation/
+
+# IDE workspace files
+*.workspace
+*.cbp
+*.layout
+
+# Code::Blocks
+*.depend
+*.layout
+*.cbp
+
+# Dev-C++
+*.dev
+
+# Eclipse CDT
+.metadata
+.project
+.cproject
+.settings/
+
+# NetBeans
+nbproject/
+
+# JetBrains IDEs
+.idea/
+*.iml
+*.iws
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# Atom
+.atom/
+
+# VS Code
+.vscode/
+*.code-workspace

@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{87654321-4321-8765-4321-876543218765}</ProjectGuid>
+    <RootNamespace>PacketAnalyzer2026Production</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <ProjectName>PacketAnalyzer2026_Production</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\6.5.3\msvc2019_64\include;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtWidgets;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuick;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtSql;$(ProjectDir)src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\6.5.3\msvc2019_64\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\6.5.3\msvc2019_64\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)_Production\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Production\</IntDir>
+    <LocalDebuggerEnvironment>QT_PLUGIN_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\plugins
+QML2_IMPORT_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\qml
+PATH=$(ProjectDir)..\6.5.3\msvc2019_64\bin;%PATH%
+QT_AUTO_SCREEN_SCALE_FACTOR=1
+QT_ENABLE_HIGHDPI_SCALING=1
+QT_QUICK_CONTROLS_STYLE=Material
+QT_QUICK_CONTROLS_MATERIAL_THEME=Dark
+QT_OPENGL=desktop
+$(LocalDebuggerEnvironment)</LocalDebuggerEnvironment>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <IncludePath>$(ProjectDir)..\6.5.3\msvc2019_64\include;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtWidgets;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuick;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtSql;$(ProjectDir)src;$(IncludePath)</IncludePath>
+    <LibraryPath>$(ProjectDir)..\6.5.3\msvc2019_64\lib;$(LibraryPath)</LibraryPath>
+    <ExecutablePath>$(ProjectDir)..\6.5.3\msvc2019_64\bin;$(ExecutablePath)</ExecutablePath>
+    <OutDir>$(SolutionDir)$(Platform)\$(Configuration)_Production\</OutDir>
+    <IntDir>$(Platform)\$(Configuration)_Production\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;QT_QML_DEBUG;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\6.5.3\msvc2019_64\include;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtWidgets;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuick;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuickControls2;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtNetwork;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtSql;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\6.5.3\msvc2019_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt6Cored.lib;Qt6Guid.lib;Qt6Widgetsd.lib;Qt6Qmld.lib;Qt6Quickd.lib;Qt6QuickControls2d.lib;Qt6Networkd.lib;Qt6Sqld.lib;ws2_32.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Cored.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Guid.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Widgetsd.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Qmld.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Quickd.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6QuickControls2d.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Networkd.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Sqld.dll" "$(OutDir)"
+if not exist "$(OutDir)platforms" mkdir "$(OutDir)platforms"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\plugins\platforms\qwindowsd.dll" "$(OutDir)platforms\"
+if not exist "$(OutDir)sqldrivers" mkdir "$(OutDir)sqldrivers"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\plugins\sqldrivers\qsqlited.dll" "$(OutDir)sqldrivers\"
+if not exist "$(OutDir)qml\QtQuick" mkdir "$(OutDir)qml\QtQuick"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\qtquick2plugind.dll" "$(OutDir)qml\QtQuick\"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\qtquick2plugin.dll" "$(OutDir)qml\QtQuick\"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\qmldir" "$(OutDir)qml\QtQuick\"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\plugins.qmltypes" "$(OutDir)qml\QtQuick\"
+if not exist "$(OutDir)qml\QtQuick\Controls" mkdir "$(OutDir)qml\QtQuick\Controls"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Controls\*" "$(OutDir)qml\QtQuick\Controls\"
+if not exist "$(OutDir)qml\QtQuick\Layouts" mkdir "$(OutDir)qml\QtQuick\Layouts"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Layouts\*" "$(OutDir)qml\QtQuick\Layouts\"
+if not exist "$(OutDir)qml\QtQuick\Window" mkdir "$(OutDir)qml\QtQuick\Window"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Window\*" "$(OutDir)qml\QtQuick\Window\"
+if not exist "$(OutDir)qml\QtQuick\Shapes" mkdir "$(OutDir)qml\QtQuick\Shapes"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Shapes\*" "$(OutDir)qml\QtQuick\Shapes\"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>echo Setting up Qt environment variables...
+set QT_PLUGIN_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\plugins
+set QML2_IMPORT_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\qml
+set PATH=$(ProjectDir)..\6.5.3\msvc2019_64\bin;%PATH%</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;_CRT_SECURE_NO_WARNINGS;WIN32_LEAN_AND_MEAN;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+      <AdditionalOptions>/Zc:__cplusplus /permissive- %(AdditionalOptions)</AdditionalOptions>
+      <AdditionalIncludeDirectories>$(ProjectDir)..\6.5.3\msvc2019_64\include;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtWidgets;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuick;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQuickControls2;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtNetwork;$(ProjectDir)..\6.5.3\msvc2019_64\include\QtSql;$(ProjectDir)src;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>$(ProjectDir)..\6.5.3\msvc2019_64\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Qt6Core.lib;Qt6Gui.lib;Qt6Widgets.lib;Qt6Qml.lib;Qt6Quick.lib;Qt6QuickControls2.lib;Qt6Network.lib;Qt6Sql.lib;ws2_32.lib;iphlpapi.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+    <PostBuildEvent>
+      <Command>xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Core.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Gui.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Widgets.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Qml.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Quick.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6QuickControls2.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Network.dll" "$(OutDir)"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\bin\Qt6Sql.dll" "$(OutDir)"
+if not exist "$(OutDir)platforms" mkdir "$(OutDir)platforms"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\plugins\platforms\qwindows.dll" "$(OutDir)platforms\"
+if not exist "$(OutDir)sqldrivers" mkdir "$(OutDir)sqldrivers"
+xcopy /Y /D "$(ProjectDir)..\6.5.3\msvc2019_64\plugins\sqldrivers\qsqlite.dll" "$(OutDir)sqldrivers\"
+if not exist "$(OutDir)qml\QtQuick" mkdir "$(OutDir)qml\QtQuick"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\*" "$(OutDir)qml\QtQuick\"
+if not exist "$(OutDir)qml\QtQuick\Controls" mkdir "$(OutDir)qml\QtQuick\Controls"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Controls\*" "$(OutDir)qml\QtQuick\Controls\"
+if not exist "$(OutDir)qml\QtQuick\Layouts" mkdir "$(OutDir)qml\QtQuick\Layouts"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Layouts\*" "$(OutDir)qml\QtQuick\Layouts\"
+if not exist "$(OutDir)qml\QtQuick\Window" mkdir "$(OutDir)qml\QtQuick\Window"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Window\*" "$(OutDir)qml\QtQuick\Window\"
+if not exist "$(OutDir)qml\QtQuick\Shapes" mkdir "$(OutDir)qml\QtQuick\Shapes"
+xcopy /Y /S /D "$(ProjectDir)..\6.5.3\msvc2019_64\qml\QtQuick\Shapes\*" "$(OutDir)qml\QtQuick\Shapes\"</Command>
+    </PostBuildEvent>
+    <PreBuildEvent>
+      <Command>echo Setting up Qt environment variables...
+set QT_PLUGIN_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\plugins
+set QML2_IMPORT_PATH=$(ProjectDir)..\6.5.3\msvc2019_64\qml
+set PATH=$(ProjectDir)..\6.5.3\msvc2019_64\bin;%PATH%</Command>
+    </PreBuildEvent>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="src\database\DatabaseManager.cpp" />
+    <ClCompile Include="src\core\PacketCaptureEngine.cpp" />
+    <ClCompile Include="moc_PacketCaptureEngine_prod.cpp" />
+    <ClCompile Include="moc_DatabaseManager_prod.cpp" />
+    <ClCompile Include="qrc_resources_prod.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\database\DatabaseManager.h" />
+    <ClInclude Include="src\core\PacketCaptureEngine.h" />
+    <!-- Qt MOC Headers with UNIQUE PATHS -->
+    <CustomBuild Include="src\core\PacketCaptureEngine.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)moc_PacketCaptureEngine_prod.cpp" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml" -I"$(ProjectDir)src" -D_DEBUG -DQT_QML_DEBUG -DWIN32_LEAN_AND_MEAN</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)moc_PacketCaptureEngine_prod.cpp" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml" -I"$(ProjectDir)src" -DNDEBUG -DWIN32_LEAN_AND_MEAN</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)moc_PacketCaptureEngine_prod.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)moc_PacketCaptureEngine_prod.cpp</Outputs>
+      <Message>MOC %(Filename).h</Message>
+    </CustomBuild>
+    <CustomBuild Include="src\database\DatabaseManager.h">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)moc_DatabaseManager_prod.cpp" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml" -I"$(ProjectDir)src" -D_DEBUG -DQT_QML_DEBUG</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\moc.exe" "%(FullPath)" -o "$(ProjectDir)moc_DatabaseManager_prod.cpp" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtCore" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtGui" -I"$(ProjectDir)..\6.5.3\msvc2019_64\include\QtQml" -I"$(ProjectDir)src" -DNDEBUG</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)moc_DatabaseManager_prod.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)moc_DatabaseManager_prod.cpp</Outputs>
+      <Message>MOC %(Filename).h</Message>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Qt Resource File with UNIQUE NAME -->
+    <CustomBuild Include="resources.qrc">
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\rcc.exe" "%(FullPath)" -o "$(ProjectDir)qrc_resources_prod.cpp"</Command>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">"$(ProjectDir)..\6.5.3\msvc2019_64\bin\rcc.exe" "%(FullPath)" -o "$(ProjectDir)qrc_resources_prod.cpp"</Command>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(ProjectDir)qrc_resources_prod.cpp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(ProjectDir)qrc_resources_prod.cpp</Outputs>
+      <Message>RCC resources.qrc</Message>
+    </CustomBuild>
+    <!-- QML Files -->
+    <None Include="complete_interface.qml" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+</Project>
